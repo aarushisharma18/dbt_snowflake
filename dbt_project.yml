@@ -39,3 +39,5 @@ models:
   jaffle_shop:
     # Applies to all files under models/example/
       +materialized: table
+
+## merging the branch to main branch
