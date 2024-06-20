@@ -38,6 +38,17 @@ clean-targets:         # directories to be removed by `dbt clean`
 models:
   jaffle_shop:
     # Applies to all files under models/example/
-      +materialized: table
+    marts:
+      materialized: table
+    staging:
+      materialized: view
+  stripe:
+  # Applies to all files under models/example/
+  marts:
+    materialized: table
+  staging:
+    materialized: view
+
+## view - is the default materialization
 
 ## merging the branch to main branch
