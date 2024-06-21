@@ -1,0 +1,14 @@
+version: 2
+
+models:
+  - name: stg_stripe_payments
+    description: This model checks for null values in payments table
+    columns:
+      - name: amount
+        description: amount per order
+        tests:
+          - not_null
+      - name: order_id
+        description: primary key
+        tests:
+          - not_null
